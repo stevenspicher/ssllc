@@ -1,0 +1,43 @@
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+@keyframes boxFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.navigation li:nth-child(3) a { animation: fadeIn calc(var(--fade-duration) /4)  forwards calc(var(--fade-delay) *.8 ) ease-in; }
+.navigation li:nth-child(1) a { animation: fadeIn calc(var(--fade-duration) /2)  forwards calc(var(--fade-delay)*.8 )  ease-in; }
+.navigation li:nth-child(2) a { animation: fadeIn calc(var(--fade-duration) *.75)  forwards calc(var(--fade-delay)*.8 ) ease-in; }
+
+.navigation li:nth-child(1)::after { animation: fadeIn calc(var(--fade-duration) /2) forwards calc(var(--fade-delay)*.5 ) ease-in; }
+.navigation li:nth-child(2)::after { animation: fadeIn calc(var(--fade-duration) *.75) forwards calc(var(--fade-delay)*.5 ) ease-in; }
+.navigation li:nth-child(3)::after { animation: fadeIn calc(var(--fade-duration) *1) forwards calc(var(--fade-delay)*.5 ) ease-in; }
+
+.logo {
+    animation: fadeIn calc(var(--fade-duration)*1) ease-in
+}
+
+
+body.pages {
+    .navigation-static {
+        /*animation: fadeIn calc(var(--fade-duration) *.25) ease-in;*/
+    }
+
+    .logo-static {
+        /*animation: fadeIn calc(var(--fade-duration) *.25) ease-in;*/
+    }
+}

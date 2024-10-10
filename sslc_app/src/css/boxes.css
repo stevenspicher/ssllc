@@ -1,0 +1,248 @@
+
+
+/*Mission boxes*/
+.box {
+    position: absolute;
+    background: var(--primary-color);
+    /*opacity: 0;*/
+    transition: opacity 2s ease-in-out;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.boxFade-in {
+    opacity: 1;
+}
+
+#box-1 {
+    width: 40vw;
+    height: 17vh;
+    top: 6vh;
+    left: 20vw;
+    background: var(--primary-color);
+}
+
+#box-2 {
+    width: 35vw;
+    height: 55vh;
+    top: 6vh;
+    left: 62vw;
+    background-color: var(--secondary-color);
+}
+
+#box-3 {
+    width: 19vw;
+    height: 35vh;
+    top: 26vh;
+    left: 41vw;
+    background: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+#box-4 {
+    width: 19vw;
+    height: 35vh;
+    top: 26vh;
+    left: 20vw;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+#box-5 {
+    width: 77vw;
+    height: 25vh;
+    top: 64vh;
+    left: 20vw;
+    background: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+
+/* For screen sizes 700px and below */
+@media (max-width: 700px) {
+    #box-1 {
+        width: 29vw;
+        height: 46vh;
+        top: 35vh;
+        left: 67vw;
+    }
+
+    #box-2 {
+        width: 50vw;
+        height: 17vh;
+        top: 77vh;
+        left: 12vw;
+        background-color: var(--secondary-color);
+    }
+
+    #box-3 {
+        width: 40vw;
+        height: 24vh;
+        top: 48vh;
+        left: 12vw;
+        background-color: var(--light-color);
+        color: var(--secondary-color);
+    }
+
+    #box-4 {
+        width: 50vw;
+        height: 15vh;
+        top: 19vh;
+        left: 48vw;
+        background-color: var(--primary-color);
+    }
+
+    #box-5 {
+        width: 61vw;
+        height: 4vh;
+        top: 10vh;
+        left: 34vw;
+        background-color: var(--dark-color);
+        color: var(--secondary-color);
+    }
+}
+
+
+
+/*Portfolio  boxes*/
+.portfolio_box {
+    position: absolute;
+    background: var(--accent-color);
+    border: 2px solid black;
+    box-shadow: 7px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    /*opacity: 0;*/
+    /*transition: opacity 2s ease-in-out;*/
+}
+
+
+#portfolio_box-1 {
+    width: 19vw;
+    height: 83vh;
+    top: 6vh;
+    left: 20vw;
+    background: var(--primary-color);
+}
+
+#portfolio_box-2 {
+    width: 56vw;
+    height: 25vh;
+    top: 6vh;
+    left: 41vw;
+    background-color: var(--secondary-color);
+}
+
+#portfolio_box-3 {
+    width: 33vw;
+    height: 54vh;
+    top: 35vh;
+    left: 64vw;
+    background: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+#portfolio_box-4 {
+    width: 21vw;
+    height: 26vh;
+    top: 35vh;
+    left: 41vw;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+#portfolio_box-5 {
+    width: 21vw;
+    height: 25vh;
+    top: 64vh;
+    left: 41vw;
+    background: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+
+/* For screen sizes 700px and below */
+@media (max-width: 700px) {
+    #portfolio_box-1 {
+        width: 29vw;
+        height: 46vh;
+        top: 35vh;
+        left: 67vw;
+        background-color: var(--accent-color);
+    }
+
+    #portfolio_box-2 {
+        width: 50vw;
+        height: 17vh;
+        top: 77vh;
+        left: 12vw;
+        background-color: var(--secondary-color);
+    }
+
+    #portfolio_box-3 {
+        width: 40vw;
+        height: 24vh;
+        top: 48vh;
+        left: 12vw;
+        background-color: var(--light-color);
+        color: var(--secondary-color);
+    }
+
+    #portfolio_box-4 {
+        width: 50vw;
+        height: 15vh;
+        top: 19vh;
+        left: 48vw;
+        background-color: var(--primary-color);
+    }
+
+    #portfolio_box-5 {
+        width: 61vw;
+        height: 4vh;
+        top: 8vh;
+        left: 34vw;
+        background-color: var(--dark-color);
+    }
+}
+
+
+/*Contact input box*/
+
+.contact_box {
+    position: absolute;
+    background: var(--accent-color);
+    border: 2px solid black;
+    box-shadow: 7px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+
+#contact_box1 {
+    width: 48vw;
+    height: 50vh;
+    top: 6vh;
+    left: 20vw;
+    color: var(--secondary-color);
+    background: var(--dark-color);
+
+}
+
+#contact_box2 {
+    width: 27vw;
+    height: 50vh;
+    top: 6vh;
+    left: 70vw;
+    background: var(--primary-color);
+
+
+}
+
+#contact_box3 {
+    width: 77vw;
+    height: 30vh;
+    top: 59vh;
+    left: 20vw;
+    background: var(--secondary-color);
+
+
+}
+

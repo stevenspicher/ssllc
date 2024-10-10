@@ -1,10 +1,15 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Mission from '././Mission.jsx';
-import Portfolio from './Portfolio';
-import Contact from './Contact.jsx';
-import Home from './Home.jsx';
-import './App.css';
+import Mission from "./pages/Mission.jsx";
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact.jsx';
+import Home from './pages/Home.jsx';
+import './css/App.css';
+import "./css/transitions.css"
+import "./css/pages.css";
+import "./css/boxes.css";
+import "./css/menu.css";
+import "./css/logo.css"
 
 function App() {
 

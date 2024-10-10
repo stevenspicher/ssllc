@@ -1,0 +1,31 @@
+
+.logo {
+    height: 20em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.logo-static {
+    height: 8em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo-static:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo-static.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}

@@ -1,9 +1,19 @@
-// Portfolio.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from "./assets/logo_llc.png";
+import logo from "../assets/logo_llc.png";
 
-const Portfolio = () => {
+
+
+const StaticNavigation = () => {
+
+    useEffect(() => {
+        document.body.classList.add("pages");
+
+        // Clean up: Remove the "homePage" class from body when HomePage unmounts
+        return () => {
+            document.body.classList.remove("pages");
+        };
+    }, []);
     return (
         <>
             <NavLink to="/">
@@ -14,10 +24,8 @@ const Portfolio = () => {
                 <li><NavLink activeClassName='active' to="/portfolio">Portfolio</NavLink></li>
                 <li><NavLink activeClassName='active' to="/contact">Contact</NavLink></li>
             </ul>
-            <h1>This is the Portfolio page</h1>;
         </>
     )
 }
 
-export default Portfolio
-
+export default StaticNavigation;

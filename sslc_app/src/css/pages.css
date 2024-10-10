@@ -1,0 +1,6 @@
+body.pages {
+    .navigation-static {
+        background-color: var(--pages-bg);
+
+    }
+}
