@@ -7,7 +7,7 @@ export  const  useEffect_loadMissionBoxes = (useEffect) => {
         // Add 'fade-in' class to each box over 500ms interval
         boxes.forEach((box, index) => {
             setTimeout(() => {
-                box.classList.add('boxFade-in');
+                box.classList.add('boxFadein');
             }, index * 500);
         });
     }, []);

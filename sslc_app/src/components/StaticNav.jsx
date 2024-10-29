@@ -21,7 +21,7 @@ const StaticNavigation = () => {
             </NavLink>
             <ul className="navigation-static">
                 <li><NavLink activeClassName='active' to="/mission">Mission</NavLink></li>
-                <li><NavLink activeClassName='active' to="/portfolio">Portfolio</NavLink></li>
+                <li><NavLink activeClassName='active' to="/portfolio">Demos</NavLink></li>
                 <li><NavLink activeClassName='active' to="/contact">Contact</NavLink></li>
             </ul>
         </>

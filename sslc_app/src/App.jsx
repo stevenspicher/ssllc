@@ -4,16 +4,20 @@ import Mission from "./pages/Mission.jsx";
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
-import './css/App.css';
-import "./css/transitions.css"
-import "./css/pages.css";
-import "./css/boxes.css";
-import "./css/menu.css";
-import "./css/logo.css"
+import './Styling//css/App.css';
+import "./Styling/css/transitions.css"
+import "./Styling/css/pages.css";
+import "./Styling/css/boxes.css";
+import "./Styling/css/menu.css";
+import "./Styling/css/logo.css"
+import "./Styling/themes/themes.js"
+import { ThemeProvider} from "@mui/material";
+import theme from "./Styling/themes/themes.js"
 
 function App() {
 
   return (
+          <ThemeProvider theme={theme}>
       <Router>
       <Routes>
           <Route path="/mission" element={<Mission/>}/>
@@ -22,6 +26,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
       </Routes>
       </Router>
+          </ThemeProvider>
   )
 }
 

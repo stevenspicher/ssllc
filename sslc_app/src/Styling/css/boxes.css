@@ -1,4 +1,7 @@
-
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 /*Mission boxes*/
 .box {
@@ -8,53 +11,64 @@
     transition: opacity 2s ease-in-out;
     border: 2px solid black;
     border-radius: 10px;
+    padding: 5px;
+    font-size: 5em;
+
 }
 
+@keyframes boxFade-In {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 .boxFade-in {
-    opacity: 1;
+    animation: fadeIn calc(var(--fade-duration)*1) ease-in,
+    /*opacity: 0;*/
 }
 
 #box-1 {
     width: 40vw;
     height: 17vh;
-    top: 6vh;
+    top: 10vh;
     left: 20vw;
+
     background: var(--primary-color);
+    color: var(--accent-color);
 }
 
 #box-2 {
     width: 35vw;
     height: 55vh;
-    top: 6vh;
+    top: 10vh;
     left: 62vw;
     background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 #box-3 {
     width: 19vw;
     height: 35vh;
-    top: 26vh;
+    top: 30vh;
     left: 41vw;
-    background: var(--accent-color);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 #box-4 {
     width: 19vw;
     height: 35vh;
-    top: 26vh;
+    top: 30vh;
     left: 20vw;
-    background-color: var(--light-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 #box-5 {
     width: 77vw;
     height: 25vh;
-    top: 64vh;
+    top: 68vh;
     left: 20vw;
-    background: var(--dark-color);
-    color: var(--secondary-color);
+    background: var(--primary-color);
+    color: var(--accent-color);
 }
 
 
@@ -117,28 +131,30 @@
 
 
 #portfolio_box-1 {
-    width: 19vw;
-    height: 83vh;
-    top: 6vh;
+    width: 79vw;
+    height: 13vh;
+    top: 10vh;
     left: 20vw;
     background: var(--primary-color);
+    color: var(--accent-color);
 }
 
 #portfolio_box-2 {
-    width: 56vw;
-    height: 25vh;
-    top: 6vh;
-    left: 41vw;
+    width: 25vw;
+    height: 69vh;
+    top: 25vh;
+    left: 20vw;
     background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 #portfolio_box-3 {
-    width: 33vw;
-    height: 54vh;
-    top: 35vh;
-    left: 64vw;
-    background: var(--accent-color);
-    color: var(--secondary-color);
+    width: 52vw;
+    height: 69vh;
+    top: 25vh;
+    left: 47vw;
+    background: var(--primary-color);
+    color: var(--accent-color);
 }
 
 #portfolio_box-4 {
@@ -146,8 +162,8 @@
     height: 26vh;
     top: 35vh;
     left: 41vw;
-    background-color: var(--light-color);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 #portfolio_box-5 {
@@ -155,8 +171,8 @@
     height: 25vh;
     top: 64vh;
     left: 41vw;
-    background: var(--dark-color);
-    color: var(--secondary-color);
+    background: var(--primary-color);
+    color: var(--accent-color);
 }
 
 
@@ -164,14 +180,14 @@
 @media (max-width: 700px) {
     #portfolio_box-1 {
         width: 29vw;
-        height: 46vh;
+        height: 34vh;
         top: 35vh;
         left: 67vw;
         background-color: var(--accent-color);
     }
 
     #portfolio_box-2 {
-        width: 50vw;
+        width: 48vw;
         height: 17vh;
         top: 77vh;
         left: 12vw;
@@ -219,19 +235,20 @@
 #contact_box1 {
     width: 48vw;
     height: 50vh;
-    top: 6vh;
+    top: 10vh;
     left: 20vw;
-    color: var(--secondary-color);
-    background: var(--dark-color);
+    color: var(--accent-color);
+    background: var(--primary-color);
 
 }
 
 #contact_box2 {
     width: 27vw;
     height: 50vh;
-    top: 6vh;
+    top: 10vh;
     left: 70vw;
-    background: var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--accent-color);
 
 
 }
@@ -239,10 +256,10 @@
 #contact_box3 {
     width: 77vw;
     height: 30vh;
-    top: 59vh;
+    top: 63vh;
     left: 20vw;
     background: var(--secondary-color);
-
+    color: var(--accent-color);
 
 }
 

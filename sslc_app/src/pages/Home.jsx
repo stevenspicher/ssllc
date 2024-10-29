@@ -6,7 +6,7 @@ const Home = () => {
         <>
             <ul className="navigation">
                 <li><Link to="/mission">Mission</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/portfolio">Demos</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <img src={logo} className="logo" alt="llc logo"/>
